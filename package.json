@@ -1,0 +1,11 @@
+{
+	"name": "brad-jones.bpm",
+	"title": "Brackets Package Manager",
+	"description": "A node script which works in a similar vane to npm, but for brackets packages.",
+	"keywords": ["bpm", "package", "manager", "console", "cli"],
+	"homepage": "https://github.com/brad-jones/bpm",
+	"version": "0.0.1",
+	"engines": { "brackets": ">=1.1.0" },
+	"author": "Brad Jones <brad@bjc.id.au>",
+	"license": "MIT"
+}

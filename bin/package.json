@@ -1,0 +1,10 @@
+{
+	"name": "bpm",
+	"version": "0.0.1",
+	"description": "Brackets Package Manager",
+	"main": "bpm",
+	"dependencies":
+	{
+		"nomnom": "~1.8.1"
+	}
+}

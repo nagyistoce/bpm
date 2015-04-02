@@ -1,0 +1,54 @@
+#!/usr/bin/env node
+
+var nomnom = require("nomnom");
+
+nomnom.option('version',
+{
+	flag: true,
+	help: 'print version and exit',
+	callback: function() { return "v0.0.1"; }
+});
+
+nomnom.command('install')
+	.option('foo',
+	{
+		abbr: 'f',
+		help: 'foo help text'
+	})
+	.callback(function(opts)
+	{
+		console.log('Installing sometghing cool');
+		console.log(opts);
+	})
+	.help("install help text")
+;
+
+nomnom.command('update')
+	.option('bar',
+	{
+		abbr: 'b',
+		help: 'bar help text'
+	})
+	.callback(function(opts)
+	{
+		console.log('Updating sometghing cool');
+		console.log(opts);
+	})
+	.help("update help text")
+;
+
+nomnom.command('remove')
+	.option('force',
+	{
+		abbr: 'f',
+		help: 'force help text'
+	})
+	.callback(function(opts)
+	{
+		console.log('Removing sometghing cool');
+		console.log(opts);
+	})
+	.help("remove help text")
+;
+
+nomnom.parse();
